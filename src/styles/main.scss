@@ -17,7 +17,7 @@ body {
 .navigation {
   height: 70px;
   padding-bottom: 3%;
-  border-bottom: #000 solid 1px;
+  // border-bottom: #000 solid 1px;
   margin: 0 6% 0 6%;
 }
 
@@ -26,6 +26,8 @@ body {
   text-align: center;
   display: flex;
   justify-content: center;
+  position: relative;
+  z-index: 10;
 }
 
 nav {
@@ -34,6 +36,7 @@ nav {
   ul {
     list-style: none;
     text-transform: uppercase;
+
     margin: 0;
     padding: 0;
 
@@ -43,11 +46,17 @@ nav {
 
       a {
         display: block;
-        padding: 0 50px;
-        font-weight: 500;
+        margin: 0 50px;
+        padding: 0 10px;
+        font-weight: 600;
         letter-spacing: 2px;
         color: #000;
         text-decoration: none;
+        &:hover {
+          color: rgba(0, 0, 0, 0.15);
+          border-bottom: rgba(0, 0, 0, 0.15) solid 1px;
+          border-left: rgba(0, 0, 0, 0.15) solid 1px;
+        }
 
         &:visited {
           display: block;
@@ -208,7 +217,7 @@ article {
   opacity: 0.3;
 }
 .bg-color {
-  background-color: #0c8448;
+  // background-color: #0c8448;
   height: 500px;
   margin-top: 8%;
   position: absolute;
@@ -217,13 +226,14 @@ article {
 }
 .text {
   // font-family: "Baskervville", serif;
-  font-size: 11vw;
+  font-size: 12vw;
   text-transform: uppercase;
   position: absolute;
-  z-index: -5;
-  bottom: 45%;
-  margin: 0 20%;
-  letter-spacing: 12px;
+  z-index: 5;
+  bottom: 50%;
+  margin: 0 13%;
+
+  letter-spacing: 2rem;
   color: #000;
 }
 .image {
@@ -231,4 +241,5 @@ article {
   position: absolute;
   bottom: 0;
   margin: 0 20%;
+  // filter: brightness(50%);
 }
