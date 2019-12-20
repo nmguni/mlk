@@ -314,6 +314,11 @@ img {
   box-shadow: rgba(0, 0, 0, 0.256) 3px 3px 3px;
 }
 
+#imgWidth {
+  width: 50%;
+  margin-left: 20%;
+}
+
 img:hover {
   filter: grayscale(0);
 }
