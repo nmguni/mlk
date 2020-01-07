@@ -378,8 +378,16 @@ img:hover {
   }
 }
 
-// tablet 768px
+// tablet 450px
 @media screen and (max-width: 450px) {
+  .content {
+    .text {
+      margin-left: 5%;
+      bottom: 45%;
+      font-size: 10vw;
+    }
+  }
+
   .navigation {
     padding-top: 10%;
     ul {
@@ -396,11 +404,21 @@ img:hover {
     bottom: 60%;
     margin-left: 15%;
   }
-  .image {
+  #bgImgOne {
+    display: none;
     width: 95%;
     margin-bottom: 25%;
-    // margin: 0 8%;
+    // display: none;
+    margin: 0 8%;
   }
+  #bgImgTwo {
+    box-shadow: none;
+    opacity: 0.5;
+    width: 70%;
+    // margin: 0 10%;
+    margin-right: 50%;
+  }
+
   .date {
     font-size: 1rem;
   }
