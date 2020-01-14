@@ -174,7 +174,7 @@ nav ul li ul li {
 
 #information {
   height: 100vh;
-  background-image: url(/martin_luther_king_wallpaper_022-removebg-preview.b5409bd0.png);
+  background-image: url(/martin-l.8a8e00f0.png);
   background-repeat: no-repeat;
   position: relative;
   background-size: cover;
@@ -199,6 +199,7 @@ nav ul li ul li {
   margin: 0 5%;
   margin-top: 10%;
   transition: 0.3s ease;
+  opacity: 0.6;
 }
 @media screen and (max-width: 512px) {
   .content {

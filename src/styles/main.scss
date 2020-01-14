@@ -258,7 +258,7 @@ nav {
 
 #information {
   height: 100vh;
-  background-image: url(../images/martin_luther_king_wallpaper_022-removebg-preview.png);
+  background-image: url(../images/martin-l.png);
   background-repeat: no-repeat;
   // background-attachment: fixed;
   // z-index: -100;
@@ -289,6 +289,7 @@ $n02: #000; /* neutral 2*/
   margin: 0 5%;
   margin-top: 10%;
   transition: 0.3s ease;
+  opacity: 0.6;
 
   @media screen and (max-width: 512px) {
     margin: 0 4%;
