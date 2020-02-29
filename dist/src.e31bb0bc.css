@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -6,146 +5,207 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #f4f4f4;
 }
 
-.navigation {
-  margin: 0 6% 0 6%;
+.sectionOne {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 45% 55%;
+  letter-spacing: 0.1rem;
 }
-
-.nav-container {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  z-index: 10;
+.sectionOne .sectionOne__content {
+  color: #000000d2;
 }
-
-nav ul {
-  list-style: none;
-  text-transform: uppercase;
+.sectionOne .sectionOne__content nav {
+  padding: 3% 5% 0 5%;
+  text-transform: capitalize;
+}
+.sectionOne .sectionOne__content nav ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
-nav ul li {
+.sectionOne .sectionOne__content nav ul li {
+  display: inline;
+  margin: 0 6%;
+  float: right;
+}
+.sectionOne .sectionOne__content nav ul .nav--logo {
   float: left;
-  position: relative;
+  font-weight: bold;
 }
-nav ul li a {
-  display: block;
-  margin: 0 50px;
-  padding: 0 10px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  color: #000;
-  text-decoration: none;
+.sectionOne .content__text {
+  padding: 0 5% 0 10%;
+  position: absolute;
+  top: 5rem;
 }
-nav ul li a:hover {
-  text-shadow: 2px 2px 2px #07743c70;
+.sectionOne .content__text h1 {
+  font-size: 9vw;
 }
-nav ul li a:visited {
-  display: block;
-  padding: 0 40px;
-  color: #000;
-  text-decoration: none;
+.sectionOne .content__text p {
+  margin: 0 60% 0 0;
+  line-height: 1.8rem;
 }
-nav ul li a:not(:only-child):after, nav ul li a:visited:not(:only-child):after {
-  padding-left: 4px;
-  content: " ▾";
+.sectionOne .sectionOne__btmBox {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(53, 53, 53, 0.48);
+  height: 8rem;
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
-nav ul li ul li {
-  min-width: 190px;
+.sectionOne .sectionOne__btmBox .Text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.3rem;
 }
 
-.nav-dropdown {
-  position: absolute;
-  display: none;
-  z-index: 1;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+.about {
+  padding: 0 5% 0 5%;
+  height: 65vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
 }
-
-#nav-toggle {
-  position: absolute;
-  left: 7px;
-  top: 7px;
-  cursor: pointer;
-  padding: 10px 35px 16px 0px;
+.about .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.8rem;
+  padding: 0.5rem;
+  text-align: center;
+  border-right: solid rgba(0, 0, 0, 0.144) 1px;
 }
-#nav-toggle span {
-  cursor: pointer;
-  border-radius: 1px;
-  height: 5px;
-  width: 25px;
-  background: #fff;
-  position: absolute;
-  display: block;
-  content: "";
-  transition: all 300ms ease-in-out;
-  border-radius: 4px;
+.about .card .inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 4.5rem;
+  height: 5rem;
+  width: 5rem;
+  border: solid rgba(0, 0, 0, 0.719) 3px;
+  padding: 1.5rem;
+  border-radius: 50%;
 }
-#nav-toggle span:before, #nav-toggle span:after {
-  cursor: pointer;
-  border-radius: 1px;
-  height: 5px;
-  width: 25px;
-  background: #fff;
-  position: absolute;
-  display: block;
-  content: "";
-  transition: all 300ms ease-in-out;
-  border-radius: 4px;
+.about .card .inner i {
+  color: rgba(0, 0, 0, 0.719);
 }
-#nav-toggle span:before {
-  top: -10px;
-}
-#nav-toggle span:after {
-  bottom: -10px;
-}
-#nav-toggle.active span {
-  background-color: transparent;
-}
-#nav-toggle.active span:before, #nav-toggle.active span:after {
-  top: 0;
-}
-#nav-toggle.active span:before {
-  transform: rotate(45deg);
-}
-#nav-toggle.active span:after {
-  transform: rotate(-45deg);
-}
-
-.sectionOne--head {
-  margin: 0 10% 0 10%;
-  position: relative;
-  height: 100vh;
-}
-.sectionOne--head .head--content {
-  background-image: url(/martin-luther-linked-arms.aaf8df1d.jpg);
-  background-size: cover;
-  width: 100%;
-  height: 95%;
-}
-.sectionOne--head .head--content h1 {
-  text-transform: uppercase;
-  letter-spacing: 1rem;
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
+.about .card .outer {
   padding: 1rem;
-  font-size: 4rem;
-  color: white;
+  border-radius: 50%;
 }
-.sectionOne--head .head--content h2 {
-  position: absolute;
-  color: white;
+.about .card .about--text {
+  padding: 1rem 0 0 0;
 }
-.sectionOne--head .head--content img {
-  position: relative;
-  bottom: 20rem;
-  width: 100%;
+
+.sectionOne__img {
+  background-image: url("/March on Washington.e5a18731.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  filter: grayscale(100%);
   z-index: -10;
 }
 
 .sectionTwo {
+  margin: 0 5% 0 5%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 0.8fr 1fr 1fr;
+  color: rgba(53, 53, 53, 0.904);
+}
+.sectionTwo .sectionTwo--cardLeft {
+  background: rgba(0, 0, 0, 0.06);
+}
+.sectionTwo .sectionTwo--cardLeft li {
+  border-bottom: 1px solid rgba(167, 165, 165, 0.295);
+}
+.sectionTwo .timeLine {
+  margin: 0 12% 0 12%;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+}
+.sectionTwo .timeLine .timeLine--title {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.sectionTwo .timeLine li {
+  list-style: none;
+  padding: 0.8rem;
+}
+.sectionTwo .timeLine li .timeLine--year {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.sectionTwo .sectionTwo--cardMid .cardMid {
+  height: 475px;
+}
+.sectionTwo .sectionTwo--cardMid .text {
+  padding: 0 8% 0 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  line-height: 1.8rem;
+  font-size: 2rem;
+}
+.sectionTwo .sectionTwo--cardMid .imgOne {
+  background-image: url("/martin-luther-king-speaking.d6db0031.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sectionTwo .sectionTwo--cardMid .imgThree {
+  background-image: url("/Martin-Luther-King-Jr.6e178db1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sectionTwo .sectionTwo--cardRight .cardRight {
+  height: 475px;
+}
+.sectionTwo .sectionTwo--cardRight .text {
+  padding: 0 8% 0 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  line-height: 2rem;
+  font-size: 2rem;
+}
+.sectionTwo .imgTwo {
+  background-image: url("/martin-luther-speach.f1ac1d3d.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax {
+  height: 450px;
+  background-image: url("/mlk.f17860dc.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 5% 0 5%;
+  filter: grayscale(70%);
+  color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-attachment: fixed;
+  background-position: center;
+}
+.parallax h3 {
+  font-size: 5vw;
+}
+
+.sectionThree {
   height: 100vh;
 }
 
