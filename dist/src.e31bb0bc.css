@@ -7,6 +7,12 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.quoteBorder {
+  border: 5px solid #00000033;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
 .sectionOne {
   height: 100vh;
   display: grid;
@@ -30,6 +36,9 @@ body {
   margin: 0 6%;
   float: right;
 }
+.sectionOne .sectionOne__content nav ul li:hover {
+  border-bottom: 1px solid #000000d2;
+}
 .sectionOne .sectionOne__content nav ul .nav--logo {
   float: left;
   font-weight: bold;
@@ -41,10 +50,12 @@ body {
 }
 .sectionOne .content__text h1 {
   font-size: 9vw;
+  color: rgba(0, 0, 0, 0.83);
 }
 .sectionOne .content__text p {
   margin: 0 60% 0 0;
   line-height: 1.8rem;
+  color: rgba(53, 53, 53, 0.77);
 }
 .sectionOne .sectionOne__btmBox {
   position: absolute;
@@ -105,17 +116,16 @@ body {
 }
 
 .sectionOne__img {
-  background-image: url("/March on Washington.e5a18731.jpg");
+  background-image: url("/March on Washington3.0942970a.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-  filter: grayscale(100%);
   z-index: -10;
 }
 
 .sectionTwo {
   margin: 0 5% 0 5%;
-  height: 100%;
+  height: 190vh;
   display: grid;
   grid-template-columns: 0.8fr 1fr 1fr;
   color: rgba(53, 53, 53, 0.904);
@@ -153,8 +163,10 @@ body {
   justify-content: center;
   align-items: center;
   font-weight: 900;
-  line-height: 1.8rem;
+  line-height: 2rem;
   font-size: 2rem;
+  background-color: #00000073;
+  color: white;
 }
 .sectionTwo .sectionTwo--cardMid .imgOne {
   background-image: url("/martin-luther-king-speaking.d6db0031.jpg");
@@ -178,6 +190,8 @@ body {
   font-weight: 900;
   line-height: 2rem;
   font-size: 2rem;
+  background-color: #00000073;
+  color: white;
 }
 .sectionTwo .imgTwo {
   background-image: url("/martin-luther-speach.f1ac1d3d.jpg");
@@ -185,28 +199,33 @@ body {
   background-size: cover;
 }
 
-.parallax {
-  height: 450px;
-  background-image: url("/mlk.f17860dc.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 0 5% 0 5%;
-  filter: grayscale(70%);
-  color: #f4f4f4;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-attachment: fixed;
-  background-position: center;
-}
-.parallax h3 {
-  font-size: 5vw;
-}
-
 .sectionThree {
   height: 100vh;
+  background-image: url("/martin-luther-flag.aa514a24.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 90%;
+  background-size: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.sectionThree h2 {
+  font-weight: 900;
+  font-size: 9vw;
+  position: absolute;
+  padding-bottom: 25rem;
+  color: rgba(0, 0, 0, 0.83);
+}
+.sectionThree .text {
+  display: block;
+  padding: 0 10% 0 55%;
+  padding-bottom: 12rem;
+  line-height: 1.8rem;
+}
+.sectionThree .text p {
+  color: rgba(53, 53, 53, 0.77);
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */
