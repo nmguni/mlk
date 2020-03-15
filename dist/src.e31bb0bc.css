@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -75,157 +79,111 @@ body {
   font-size: 1.3rem;
 }
 
-.about {
-  padding: 0 5% 0 5%;
-  height: 65vh;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1.5rem;
-}
-.about .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  line-height: 1.8rem;
-  padding: 0.5rem;
-  text-align: center;
-  border-right: solid rgba(0, 0, 0, 0.144) 1px;
-}
-.about .card .inner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 4.5rem;
-  height: 5rem;
-  width: 5rem;
-  border: solid rgba(0, 0, 0, 0.719) 3px;
-  padding: 1.5rem;
-  border-radius: 50%;
-}
-.about .card .inner i {
-  color: rgba(0, 0, 0, 0.719);
-}
-.about .card .outer {
-  padding: 1rem;
-  border-radius: 50%;
-}
-.about .card .about--text {
-  padding: 1rem 0 0 0;
-}
-
 .sectionOne__img {
   background-image: url("/March on Washington3.0942970a.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-  z-index: -10;
 }
 
 .sectionTwo {
-  margin: 0 5% 0 5%;
-  height: 190vh;
+  height: 100vh;
   display: grid;
-  grid-template-columns: 0.8fr 1fr 1fr;
-  color: rgba(53, 53, 53, 0.904);
+  grid-template-columns: 45% 55%;
 }
-.sectionTwo .sectionTwo--cardLeft {
-  background: rgba(0, 0, 0, 0.06);
-}
-.sectionTwo .sectionTwo--cardLeft li {
-  border-bottom: 1px solid rgba(167, 165, 165, 0.295);
-}
-.sectionTwo .timeLine {
-  margin: 0 12% 0 12%;
-  font-size: 0.8rem;
-  line-height: 1.3rem;
-}
-.sectionTwo .timeLine .timeLine--title {
-  font-weight: bold;
-  text-transform: capitalize;
-}
-.sectionTwo .timeLine li {
-  list-style: none;
-  padding: 0.8rem;
-}
-.sectionTwo .timeLine li .timeLine--year {
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-.sectionTwo .sectionTwo--cardMid .cardMid {
-  height: 475px;
-}
-.sectionTwo .sectionTwo--cardMid .text {
-  padding: 0 8% 0 8%;
+.sectionTwo .sectionTwo--content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-weight: 900;
-  line-height: 2rem;
-  font-size: 2rem;
-  background-color: #00000073;
-  color: white;
+  background-color: rgba(53, 53, 53, 0.48);
 }
-.sectionTwo .sectionTwo--cardMid .imgOne {
-  background-image: url("/martin-luther-king-speaking.d6db0031.jpg");
+.sectionTwo .sectionTwo--content p {
+  line-height: 1.8rem;
+  color: #ffffffad;
+  padding: 0 30% 0 5%;
+  letter-spacing: 0.1rem;
+  padding-top: 3rem;
+}
+.sectionTwo .sectionTwo--img {
+  background-image: url("/martin-luther-speech.5909f400.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: -10;
 }
-.sectionTwo .sectionTwo--cardMid .imgThree {
-  background-image: url("/Martin-Luther-King-Jr.6e178db1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.sectionTwo .sectionTwo--cardRight .cardRight {
-  height: 475px;
-}
-.sectionTwo .sectionTwo--cardRight .text {
-  padding: 0 8% 0 8%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-weight: 900;
-  line-height: 2rem;
-  font-size: 2rem;
-  background-color: #00000073;
-  color: white;
-}
-.sectionTwo .imgTwo {
-  background-image: url("/martin-luther-speach.f1ac1d3d.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+.sectionTwo .sectionTwo--img .text {
+  font-size: 9vw;
+  color: rgba(0, 0, 0, 0.83);
+  font-weight: bold;
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 10%;
 }
 
 .sectionThree {
   height: 100vh;
+  display: grid;
+  grid-template-columns: 45% 55%;
+}
+.sectionThree .sectionThree--img {
   background-image: url("/martin-luther-flag.aa514a24.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: 90%;
-  background-size: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  background-position: 30% 80%;
 }
-.sectionThree h2 {
-  font-weight: 900;
+.sectionThree .sectionThree--content .text {
   font-size: 9vw;
-  position: absolute;
-  padding-bottom: 25rem;
   color: rgba(0, 0, 0, 0.83);
+  font-weight: bold;
+  position: absolute;
+  margin-top: 2%;
+  margin-left: 10%;
 }
-.sectionThree .text {
-  display: block;
-  padding: 0 10% 0 55%;
-  padding-bottom: 12rem;
+.sectionThree .sectionThree--content p {
   line-height: 1.8rem;
+  margin: 55% 2% 0 23%;
+  letter-spacing: 0.1rem;
 }
-.sectionThree .text p {
-  color: rgba(53, 53, 53, 0.77);
-  font-size: 1.2rem;
+.sectionThree .sectionThree--content .sectionOne__btmBox {
+  position: relative;
+  bottom: 0;
+  background-color: rgba(53, 53, 53, 0.48);
+  height: 8rem;
+  width: 140%;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.sectionFour {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 45% 55%;
+}
+.sectionFour .text {
+  font-size: 9vw;
+  color: rgba(0, 0, 0, 0.83);
+  font-weight: bold;
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+.sectionFour .sectionFour--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(53, 53, 53, 0.48);
+}
+.sectionFour .sectionFour--content p {
+  line-height: 1.8rem;
+  color: #ffffffad;
+  padding: 0 30% 0 5%;
+  letter-spacing: 0.1rem;
+  padding-top: 3rem;
+}
+.sectionFour .sectionFour--img {
+  background-image: url("/martin-luther-king-jr.02a90d5e.jpg");
 }
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */

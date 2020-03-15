@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\images\\March on Washington3.jpg":[["March on Washington3.0942970a.jpg","images/March on Washington3.jpg"],"images/March on Washington3.jpg"],"./..\\images\\martin-luther-king-speaking.jpg":[["martin-luther-king-speaking.d6db0031.jpg","images/martin-luther-king-speaking.jpg"],"images/martin-luther-king-speaking.jpg"],"./..\\images\\Martin-Luther-King-Jr.jpg":[["Martin-Luther-King-Jr.6e178db1.jpg","images/Martin-Luther-King-Jr.jpg"],"images/Martin-Luther-King-Jr.jpg"],"./..\\images\\martin-luther-speach.jpg":[["martin-luther-speach.f1ac1d3d.jpg","images/martin-luther-speach.jpg"],"images/martin-luther-speach.jpg"],"./..\\images\\martin-luther-flag.jpg":[["martin-luther-flag.aa514a24.jpg","images/martin-luther-flag.jpg"],"images/martin-luther-flag.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"./..\\images\\March on Washington3.jpg":[["March on Washington3.0942970a.jpg","images/March on Washington3.jpg"],"images/March on Washington3.jpg"],"./..\\images\\martin-luther-speech.jpg":[["martin-luther-speech.5909f400.jpg","images/martin-luther-speech.jpg"],"images/martin-luther-speech.jpg"],"./..\\images\\martin-luther-flag.jpg":[["martin-luther-flag.aa514a24.jpg","images/martin-luther-flag.jpg"],"images/martin-luther-flag.jpg"],"./..\\images\\martin-luther-king-jr.jpg":[["martin-luther-king-jr.02a90d5e.jpg","images/martin-luther-king-jr.jpg"],"images/martin-luther-king-jr.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("./styles/main.scss");
@@ -221,7 +221,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65351" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52800" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
