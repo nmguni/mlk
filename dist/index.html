@@ -22,9 +22,11 @@
         <nav>
           <ul>
             <li class="nav--logo">MARTIN</li>
-            <li>about</li>
-            <li>Bio</li>
-            <li> <a href="#2">contact</a> </li>
+    
+            <li> <a href="#2">Nobel</a> </li>
+            <li> <a href="">Montgomery</a> </li>
+                
+            <li><a href="">Birmingham</a></li>
           </ul>
         </nav>
 
@@ -60,14 +62,14 @@
     <!-- SECTION TWO -->
     <div class="sectionTwo">
       <div class="sectionTwo--img">
-       <div class="text">
-         First President Of he SCLC
+       <div id="textTwo" class="text">
+        Montgomery Bus Boycott
        </div>
        
       </div>
       <div id="2" class="sectionTwo--content">
-        <p>
-          Inspired by the bus boycott, King, along with other civil rights activists, founded the Southern Christian Leadership Conference (SCLC) in 1957 to coordinate their efforts. King was the president of SCLC till his assassination in 1968. The SCLC had a large role in the American Civil Rights Movement.
+        <p class="sectionTwo--text">
+          On the same day that Rosa Parks was arrested for refusing to give up her seat on a bus to a white person, King led the boycott on the Montgomery, Ala., bus system. The boycott, which lasted over a year, was a political and social protest against racial segregation. It eventually led to a Supreme Court ruling that dubbed segregated buses unconstitutional. King was arrested for leading the protest, he underwent abuse and multiple threats, and his home was even bombed. But his determination for justice and equality never stopped him in his fight.
         </p>
         
       </div>
@@ -77,9 +79,9 @@
     <div class="sectionThree">
       <div class="sectionThree--content">
        <div class="text">
-         Led The Birmingham Campaing 
+        Birmingham Campaign
        </div>
-       <p>Till the 1960s Birmingham was one of the most racially divided cities in US. Black citizen’s faced discrimination both legally and culturally. In early 1963 King started a movement against this which is known as the Birmingham Campaign. When the campaign ran low on adult volunteers, it recruited young students and even children. The campaign gained nationwide attention when the Birmingham Police Department, led by Eugene “Bull” Connor, used high-pressure water jets and police attack dogs on the children. The movement ended with Connor losing his job and the municipal government changing the city’s discriminatory laws.</p>
+       <p>The SCLC promoted this strategic effort to end the Birmingham’s segregated civil and discriminatory economic policies. The campaign began with a boycott on local businesses to pressure them to desegregate. When the boycott initially failed, King and the SCLC started “Project C,” a series of sit-ins and marches. Although protests turned violent at some points, with Birmingham police using brutal force to control protestors, the campaign was an immense success. King’s reputation improved, Jim Crow laws ended and public businesses and restaurants became more open to African-American patrons.</p>
        
       </div>
       <div class="sectionThree--img">
@@ -89,12 +91,12 @@
     <div class="sectionFour">
       <div class="sectionFour--img">
         <div class="text">
-          Speech Intensified The <br> Civil Rights Movement
+          Nobel Peace Prize
         </div>
       </div>
       <div class="sectionFour--content">
    
-        <p>During the March on Washington, Martin Luther King delivered the famous ‘I Have a Dream’ speech from the steps of the Lincoln Memorial to a gathering of over 250,000 people. In the speech’s most famous passage, King departed from written text at Mahalia Jackson’s cry: “Tell them about the dream, Martin!” The speech is considered the defining moment of the American Civil Rights Movement. It was ranked the top American speech in a 1999 poll of scholars.</p>
+        <p>After his years of historic accomplishments and triumphs, King was honored with the distinguished award in 1964. His active and dynamic leadership, highlighted by his nonviolent tactics, helped him earn the prize. Receiving the award was a testament that nonviolence was the best method in achieving peace and equality. At 35, King was the youngest man to ever receive the Nobel Peace Prize. In classic MLK style, he used his prize money to help the efforts of the Civil Rights Movement. King won several awards in his lifetime, but the peace prize was inarguably his greatest one.</p>
       </div>
     </div>
     <!-- SECTION THREE 
@@ -115,8 +117,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script> -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <script>// var rule = CSSRulePlugin.getRule("span:after");
 // gsap.to(rule, { cssRule: { scaleY: 0, duratoin: 1 } });
 // gsap.from(".headText", {
@@ -154,9 +158,50 @@
 //   delay: 1.8
 // });
 var controller = new ScrollMagic.Controller();
+var tl = new TimelineMax();
+tl.staggerFrom(".box", 1.25, {
+  scale: 0,
+  cycle: {
+    y: [-50, 50]
+  },
+  ease: Elastic.easeOut,
+  stagger: {
+    from: "center",
+    amount: 0.25
+  }
+});
+var controller = new ScrollMagic.Controller();
+var tl = new TimelineMax();
+tl.staggerFrom("#textTwo", 1.25, {
+  opacity: 0,
+  duratoin: 3,
+  ease: "SlowMo.easeOut",
+  y: 500 // stagger: {
+  //   from: "center",
+  //   amount: 0.25
+  // }
+
+});
+tl.staggerFrom(".sectionTwo--text", 1.25, {
+  opacity: 0,
+  ease: "SlowMo.easeOut",
+  stagger: {
+    from: "center",
+    amount: 0.25
+  }
+});
 var scene = new ScrollMagic.Scene({
-  triggerElement: '.sectionTwo',
-  duration: 3000
-}).setTween().addIndicators().addTo(controller);</script> 
+  triggerElement: ".sectionTwo",
+  triggerHook: 0
+}).addIndicators({
+  colorTrigger: "white",
+  colorStart: "white",
+  colorEnd: "white",
+  indent: 5
+}).setTween(tl).addTo(controller);</script>
+      
+
   </body>
 </html>
+
+

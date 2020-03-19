@@ -29,10 +29,15 @@ body {
         list-style-type: none;
         margin: 0;
         padding: 0;
+        a {
+          text-decoration: none;
+          color: #000;
+        }
         li {
           display: inline;
-          margin: 0 6%;
+          margin: 0 3%;
           float: right;
+
           &:hover {
             border-bottom: 1px solid #000000d2;
           }
@@ -108,9 +113,8 @@ body {
     p {
       line-height: 1.8rem;
       color: #ffffffad;
-      padding: 0 30% 0 5%;
+      padding: 20% 30% 0 5%;
       letter-spacing: 0.1rem;
-      padding-top: 3rem;
     }
   }
 
@@ -151,12 +155,12 @@ body {
       font-weight: bold;
       position: absolute;
       margin-top: 2%;
-      margin-left: 10%;
+      margin-left: 5%;
     }
     p {
       line-height: 1.8rem;
       // color: #ffffffad;
-      margin: 55% 2% 0 23%;
+      margin: 35% 2% 0 23%;
       letter-spacing: 0.1rem;
     }
 
@@ -197,9 +201,8 @@ body {
     p {
       line-height: 1.8rem;
       color: #ffffffad;
-      padding: 0 30% 0 5%;
+      padding: 15% 30% 0 5%;
       letter-spacing: 0.1rem;
-      padding-top: 3rem;
     }
   }
 

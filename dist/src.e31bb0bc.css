@@ -35,9 +35,13 @@ body {
   margin: 0;
   padding: 0;
 }
+.sectionOne .sectionOne__content nav ul a {
+  text-decoration: none;
+  color: #000;
+}
 .sectionOne .sectionOne__content nav ul li {
   display: inline;
-  margin: 0 6%;
+  margin: 0 3%;
   float: right;
 }
 .sectionOne .sectionOne__content nav ul li:hover {
@@ -101,9 +105,8 @@ body {
 .sectionTwo .sectionTwo--content p {
   line-height: 1.8rem;
   color: #ffffffad;
-  padding: 0 30% 0 5%;
+  padding: 20% 30% 0 5%;
   letter-spacing: 0.1rem;
-  padding-top: 3rem;
 }
 .sectionTwo .sectionTwo--img {
   background-image: url("/martin-luther-speech.5909f400.jpg");
@@ -137,11 +140,11 @@ body {
   font-weight: bold;
   position: absolute;
   margin-top: 2%;
-  margin-left: 10%;
+  margin-left: 5%;
 }
 .sectionThree .sectionThree--content p {
   line-height: 1.8rem;
-  margin: 55% 2% 0 23%;
+  margin: 35% 2% 0 23%;
   letter-spacing: 0.1rem;
 }
 .sectionThree .sectionThree--content .sectionOne__btmBox {
@@ -178,9 +181,8 @@ body {
 .sectionFour .sectionFour--content p {
   line-height: 1.8rem;
   color: #ffffffad;
-  padding: 0 30% 0 5%;
+  padding: 15% 30% 0 5%;
   letter-spacing: 0.1rem;
-  padding-top: 3rem;
 }
 .sectionFour .sectionFour--img {
   background-image: url("/martin-luther-king-jr.02a90d5e.jpg");
