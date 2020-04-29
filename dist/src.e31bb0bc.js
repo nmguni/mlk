@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\images\\March on Washington3.jpg":[["March on Washington3.0942970a.jpg","images/March on Washington3.jpg"],"images/March on Washington3.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"./..\\images\\March-on-Washington.jpg":[["March-on-Washington.cc13aae6.jpg","images/March-on-Washington.jpg"],"images/March-on-Washington.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("./styles/main.scss");
@@ -221,7 +221,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49987" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49413" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

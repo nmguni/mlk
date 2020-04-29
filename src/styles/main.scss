@@ -53,6 +53,7 @@ body {
     h1 {
       font-size: 9vw;
       color: rgba(0, 0, 0, 0.83);
+      z-index: 10;
     }
     p {
       margin: 0 60% 0 0;
@@ -69,6 +70,7 @@ body {
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    z-index: 10;
     .Text {
       display: flex;
       flex-direction: column;
@@ -81,7 +83,7 @@ body {
   }
 }
 .sectionOne--img {
-  background-image: url("../images/March\ on\ Washington3.jpg");
+  background-image: url("../images/March-on-Washington.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -105,6 +107,7 @@ body {
           list-style-type: none;
           writing-mode: vertical-rl;
           position: absolute;
+          display: inherit;
           margin: 5% 0 0 1.8rem;
           padding: 0;
           a {
@@ -125,28 +128,8 @@ body {
     .sectionOne--content {
       color: #000000d2;
       nav {
-        padding: 3% 5% 0 5%;
-        text-transform: capitalize;
-
         ul {
-          list-style-type: none;
-          writing-mode: unset;
-          position: absolute;
-          // margin: 5% 0 0 1.8rem;
-          padding: 0;
-          bottom: 2.5rem;
-          a {
-            text-decoration: none;
-            color: #000;
-          }
-          li {
-            padding: 0 0.5rem;
-            margin-bottom: 1rem;
-            color: #000000;
-          }
-          .disabled {
-            color: #000000;
-          }
+          display: none;
         }
       }
     }
@@ -160,41 +143,10 @@ body {
 }
 
 @media only screen and (max-width: 900px) {
-  .sectionOne {
-    .sectionOne--content {
-      color: #000000d2;
-      nav {
-        padding: 3% 5% 0 5%;
-        text-transform: capitalize;
-
-        ul {
-          list-style-type: none;
-          writing-mode: unset;
-          position: absolute;
-          margin: 0;
-          padding: 0;
-          bottom: 2.5rem;
-          a {
-            text-decoration: none;
-            color: #000;
-          }
-          li {
-            padding: 0 0.5rem;
-            margin-bottom: 1rem;
-            color: #000000;
-          }
-          .disabled {
-            color: #000000;
-          }
-        }
-      }
-    }
-
-    .sectionOne--btmBox {
-      width: 100%;
-      .Text {
-        font-size: 1rem;
-      }
+  .sectionOne--btmBox {
+    width: 100%;
+    .Text {
+      font-size: 1rem;
     }
   }
 }
@@ -209,23 +161,18 @@ body {
         padding-top: 0.5rem;
       }
     }
-    .sectionOne--content {
-      color: #000000d2;
-      nav {
-        padding: 3% 5% 0 5%;
+  }
+}
 
-        ul {
-          .washingtonText {
-            color: #ffffffad !important;
-            // font-weight: bold;
-          }
-
-          li {
-            padding: 0 1.5rem;
-            margin-bottom: 1rem;
-            color: #000000;
-          }
-        }
+@media only screen and (max-width: 700px) {
+  .sectionOne {
+    .sectionOne--btmBox {
+      width: 100%;
+      .Text {
+        // position: absolute;
+        bottom: 40%;
+        // padding-right: 5%;
+        // margin-left: 62%;
       }
     }
   }
@@ -234,10 +181,12 @@ body {
 @media only screen and (max-width: 550px) {
   .sectionOne {
     .sectionOne--btmBox {
+      grid-template-columns: 100%;
+      display: flex;
+      justify-content: center;
       .Text {
-        position: absolute;
-        bottom: 0;
-        margin-left: 62%;
+        font-size: 2rem;
+        text-transform: capitalize;
       }
     }
   }
@@ -279,22 +228,20 @@ body {
     display: grid;
     grid-template-columns: 100%;
 
+    .sectionOne--img {
+      opacity: 0.1 !important;
+    }
     .sectionOne--content {
       .nav--bar {
         padding: 0;
         margin: 0;
-
-        ul {
-          li {
-            a {
-              color: #ffffff;
-            }
-          }
-        }
       }
 
       .content--text {
         text-align: center;
+        h1 {
+          font-weight: bold;
+        }
         .headText {
           color: #000;
           opacity: unset;
@@ -324,6 +271,12 @@ body {
     opacity: 0.3;
     z-index: -10;
   }
+
+  .sectionOne--btmBox {
+    .Text {
+      display: flex;
+    }
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -336,14 +289,6 @@ body {
             padding: 0 0.5rem;
           }
         }
-      }
-    }
-
-    .sectionOne--btmBox {
-      .Text {
-        position: absolute;
-        bottom: 0;
-        margin: 0.5rem 5.5rem;
       }
     }
   }
