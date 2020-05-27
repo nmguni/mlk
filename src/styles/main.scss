@@ -14,15 +14,15 @@ body {
     color: #000000d2;
     .nav--bar {
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      // flex-direction: row;
+      // justify-content: space-between;
     }
     nav {
       padding: 3% 5% 0 5%;
       text-transform: capitalize;
       ul {
         list-style-type: none;
-        margin: 0;
+        margin-left: 2.5rem;
         padding: 0;
         a {
           text-decoration: none;
